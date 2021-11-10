@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+
+.my-header{
+  grid-area: header;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border: 2px #fff;
+  outline: #8B0000 solid 10px;
+  box-shadow:
+  0 0 7px #8B0000,
+  0 0 10px #8B0000,
+  0 0 21px #8B0000,
+  0 0 42px #8B0000,
+  0 0 82px #8B0000,
+  0 0 92px #8B0000,
+  0 0 102px #8B0000,
+  0 0 151px #8B0000;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.left{
+  grid-area: left;
+
+}
+
+.right{
+  grid-area: right;
+}
+
+.my-footer{
+  grid-area: footer;
+  text-align: center;
+  border: 2px #fff;
+  outline: #8B0000 solid 10px;
+  box-shadow:
+  0 0 7px #8B0000,
+  0 0 10px #8B0000,
+  0 0 21px #8B0000,
+  0 0 42px #8B0000,
+  0 0 82px #8B0000,
+  0 0 92px #8B0000,
+  0 0 102px #8B0000,
+  0 0 151px #8B0000;
+  margin: auto;
+  padding: 20px;
+}
+
+ul{
+  text-align: left;
+  display: flex;
+  list-style: none;
+}
+
+.info{
+  display: grid;
+  grid-column-start: 1;
+}
+
+.pic{
+  display: grid;
+  grid-column-start: 1;
+}
+
+img {
+  display: inline-block;
+  float: right;
+  width: auto;
+  height: auto;
+
+}
+
+h1{
+  color: #c6975b;
+ text-align: center;
+ font-size: 80px;
+
+}
+
+h2{
+  color: #c6975b;
+ text-align: center;
+ font-size: 50px;
+ font-family: 'Baskervville', serif;
+}
+
+h3{
+color: #c6975b;
+text-align: left;
+font-size: 28px;
+font-family: 'Volkhov', serif;
+}
+
+p{
+  color: #efe4d1;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h6{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.neon{
+  font-size: 80px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #8B0000,
+    0 0 10px #8B0000,
+    0 0 21px #8B0000,
+    0 0 42px #8B0000,
+    0 0 82px #8B0000,
+    0 0 92px #8B0000,
+    0 0 102px #8B0000,
+    0 0 151px #8B0000;
+  text-align: center;
+
+}
+
+
+h4{
+  color: #efe4d1;
+  text-align: center;
+  font-family: 'Volkhov', serif;
+}
+
+h5{
+  color: #efe4d1;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ol{
+  color: #efe4d1;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+a:link, a:visited {
+  background-color: #ce2a37;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+
+.accordion {
+  background-color: black;
+  color: #c6975b;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #8B0000;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
